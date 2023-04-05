@@ -16,10 +16,10 @@ interface Props {
 
 export default ({ role, message }: Props) => {
   useCopyCode()
-  const roleClass = {
-  system: "background-image: url('https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png')",
-  user: "background-image: url('https://pic.imgdb.cn/item/642d7c5fa682492fcc92d18b.png')",
-  assistant: "background-image: url('https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png')"
+  const roleImage = {
+  system: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png",
+  user: "https://pic.imgdb.cn/item/642d7c5fa682492fcc92d18b.png",
+  assistant: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png"
   }
 
   const htmlString = () => {
@@ -49,7 +49,7 @@ export default ({ role, message }: Props) => {
       class:op-75={role === "user"}
     >
       <div
-        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
+        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleImage[role]}`}
       ></div>
       <div
         class="message prose text-slate break-words overflow-hidden"
