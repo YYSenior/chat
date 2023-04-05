@@ -48,9 +48,10 @@ export default ({ role, message }: Props) => {
       class="flex py-2 gap-3 px-4 rounded-lg transition-colors md:hover:bg-slate/3 relative message-item"
       class:op-75={role === "user"}
     >
-      <div
-        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
-      ></div>
+      <img
+        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80}
+        src={'${roleClass[role]}'}
+      />
       <div
         class="message prose text-slate break-words overflow-hidden"
         innerHTML={htmlString()}
