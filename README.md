@@ -2,4 +2,4 @@
 
 ![](assets/preview.png)
 
-感谢@[速龙博客](https://blog.ahayu.cn)的开源项目支持
+你可以在 Chat/来源/ 内寻找部署方法及源码链接。
