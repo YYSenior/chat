@@ -16,11 +16,11 @@ interface Props {
 
 export default ({ role, message }: Props) => {
   useCopyCode()
-  const roleClass = {
-    system: "bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300",
-    user: "bg-gradient-to-r from-sky-400 to-emerald-500",
-    assistant: "bg-gradient-to-r from-yellow-300 to-red-700 "
-  }
+const roleClass = {
+  system: "bg-system-avatar",
+  user: "bg-user-avatar",
+  assistant: "bg-assistant-avatar"
+}
 
   const htmlString = () => {
     const md = MarkdownIt({
