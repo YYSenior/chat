@@ -17,9 +17,9 @@ interface Props {
 export default ({ role, message }: Props) => {
   useCopyCode()
   const roleClass = {
- system: "bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300",
- user: "bg-gradient-to-r from-sky-400 to-emerald-500",
- assistant: "bg-gradient-to-r from-green-300 to-green-300"
+ system: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png",
+ user: "https://pic.imgdb.cn/item/642d7c5fa682492fcc92d18b.png",
+ assistant: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png"
   }
 
   const htmlString = () => {
