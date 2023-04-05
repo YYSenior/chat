@@ -22,6 +22,12 @@ const roleClass = {
   assistant: "bg-assistant-avatar"
 }
 
+const roleImage = {
+  system: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png",
+  user: "https://pic.imgdb.cn/item/642d7c5fa682492fcc92d18b.png",
+  assistant: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png"
+}
+
   const htmlString = () => {
     const md = MarkdownIt({
       breaks: true,
@@ -50,6 +56,7 @@ const roleClass = {
     >
       <div
         class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
+        style={`background-image: url(${roleImage[role]})`}
       ></div>
       <div
         class="message prose text-slate break-words overflow-hidden"
