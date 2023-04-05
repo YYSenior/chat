@@ -50,7 +50,7 @@ export default ({ role, message }: Props) => {
     >
       <div
         class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
-      ><img src={ ${roleClass[role]} /></div>
+      ></div>
       <div
         class="message prose text-slate break-words overflow-hidden"
         innerHTML={htmlString()}
