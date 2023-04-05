@@ -49,7 +49,7 @@ export default ({ role, message }: Props) => {
       class:op-75={role === "user"}
     >
       <img
-        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80}
+        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80'}
         src={'${roleClass[role]}'}
       />
       <div
