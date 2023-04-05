@@ -49,7 +49,7 @@ export default ({ role, message }: Props) => {
       class:op-75={role === "user"}
     >
       <div
-        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
+        class={`${roleClass[role]}`}
       ></div>
       <div
         class="message prose text-slate break-words overflow-hidden"
