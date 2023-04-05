@@ -17,9 +17,9 @@ interface Props {
 export default ({ role, message }: Props) => {
   useCopyCode()
   const roleClass = {
-    system: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png",
-    user: "https://pic.imgdb.cn/item/642d7c5fa682492fcc92d18b.png",
-    assistant: "https://pic.imgdb.cn/item/642d7c3fa682492fcc929f95.png"
+ system: "bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300",
+ user: "bg-gradient-to-r from-sky-400 to-emerald-500",
+ assistant: "bg-gradient-to-r from-green-300 to-green-300"
   }
 
   const htmlString = () => {
@@ -48,7 +48,9 @@ export default ({ role, message }: Props) => {
       class="flex py-2 gap-3 px-4 rounded-lg transition-colors md:hover:bg-slate/3 relative message-item"
       class:op-75={role === "user"}
     >
-<div class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80`}><img src="${roleClass[role]}"></div>
+      <div
+        class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
+      ><img src={ ${roleClass[role]} /></div>
       <div
         class="message prose text-slate break-words overflow-hidden"
         innerHTML={htmlString()}
